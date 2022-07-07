@@ -37,7 +37,7 @@ export default function Home({landingdata}) {
 }
 
 export const getServerSideProps = async() => {
-  const res = await axios.get('http://localhost:3000/api/store');
+  const res = await axios.get('https://ghanabraid.com/api/store');
   return {
     props: {
       landingdata: res.data,
