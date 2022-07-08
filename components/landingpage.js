@@ -88,7 +88,7 @@ export default function LandingPage({storename}) {
        </center>
        <div>
        <Modals1/>
-       <div className={cla.videotitle}>Caribbean Summer 2022 Hair Style </div>
+       <div className={cla.videotitle}>Caribbean Braid Hair Style - Click here </div>
        </div>
         
       

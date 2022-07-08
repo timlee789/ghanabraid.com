@@ -217,7 +217,7 @@
     background-color: #fff;
   
     border-radius: 20px;
-    width: 95%;
+    width: 100%;
     margin-top: 40px;
   }
   .title{
@@ -225,7 +225,7 @@
     background-color: yellow;
     position: fixed; /* Set the navbar to fixed position */
     top: 5px; /* Position the navbar at the top of the page */
-    width: 87%; /* Full width */
+    width: 90%; /* Full width */
     font-size: 20px;
     font-weight: 500;
     height: 40px;
