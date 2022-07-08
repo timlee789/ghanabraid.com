@@ -12,6 +12,7 @@ export default function LandingPage({storename}) {
     
      const router = useRouter()
      const [Radio, setRadio] = useState();
+     
      async function submitHandler(event) {
        event.preventDefault();
        const enteredName = refName.current.value;
@@ -36,22 +37,22 @@ export default function LandingPage({storename}) {
      }
      async function addDataHandler(inputData) {
 
-      // const response = await fetch('/api/post',
-      //     {
-      //         method: 'POST',
-      //         body: JSON.stringify(inputData),
-      //         headers: {
-      //             'Content-type': 'application/json'
-      //         }
-      //     })
-      // const data = await response.json();
-      // router.push('/thanks')
+      const response = await fetch('/api/post',
+          {
+              method: 'POST',
+              body: JSON.stringify(inputData),
+              headers: {
+                  'Content-type': 'application/json'
+              }
+          })
+      const data = await response.json();
+      router.push('/thanks')
   }
 
   return (
     <div className={cla.main}>
        <Head>  
-        {/* <meta name="viewport" content="width=1150"/> */}
+         <meta name="viewport" content="width=1150"/> 
         <title>3X Ghana Braid Giveaway Event</title>
         <meta name="description" content="3X Ghana Braid Giveaway Event" />
         <link rel="image_src" href="https://bijouxhair.com/tim/landing2/3xghanaphoto6.jpg" />     
@@ -98,13 +99,13 @@ export default function LandingPage({storename}) {
        <div className={cla.videotitle}>3X Ghana Braid is Highend Braid</div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanaphoto5.jpg' alt='banner' className={cla.image}/>
        <div className={cla.videotitle}>3X Ghana Braid 100% Kanekalon </div>
-       <iframe width="100%" height="1000" src="https://www.youtube.com/embed/dr8M6brJB4s?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-       <div className={cla.videotitle}>3X Ghana Braid in Bahamas Cable Beach</div>
+       <iframe width="100%" height="900" src="https://www.youtube.com/embed/dr8M6brJB4s?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+       <div className={cla.videotitle}>3X Ghana Braid in Bahamas</div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanacolor.jpg' alt='banner' className={cla.image}/>
-       <div className={cla.videotitle}>3X Ghana Braid over 50 different colors</div>
+       <div className={cla.videotitle}>Over 50 different colors</div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanapackage.jpg' alt='banner' className={cla.image}/>
        <div className={cla.videotitle}>3X Ghana Braid 40 50 60 70</div>
-       <iframe width="100%" height="1000" src="https://www.youtube.com/embed/mnM5Noi_W7c?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+       <iframe width="100%" height="900" src="https://www.youtube.com/embed/mnM5Noi_W7c?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
        <div className={cla.videotitle}>3X Ghana Braid in Kingston Jamaica</div>
        <div >
       <a href="https://www.cosmopolitan.com/style-beauty/beauty/g36815240/ghana-braids-ideas/" target="_blank" rel="noreferrer">
@@ -114,7 +115,7 @@ export default function LandingPage({storename}) {
       </div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanaphoto2.jpg' alt='banner' className={cla.image}/>
        <div className={cla.videotitle}> Try new style with 3X Ghana Braid  </div>
-       <iframe width="100%" height="1000" src="https://www.youtube.com/embed/uDyX878Q8mc?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+       <iframe width="100%" height="900" src="https://www.youtube.com/embed/uDyX878Q8mc?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
        <div className={cla.videotitle}>3X Ghana Braid in Wynwood Miami FL</div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanaphoto1.jpg' alt='banner' className={cla.image}/>
       

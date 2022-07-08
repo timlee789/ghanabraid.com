@@ -3,7 +3,6 @@ import axios from 'axios';
 import StoreList from '../components/storeList';
 import Head from 'next/head';
 import {MongoClient} from 'mongodb';
-import Loginbtn from '../components/loginbtn';
 import { useState } from 'react';
 
 
@@ -28,7 +27,7 @@ export default function Home({landingdata}) {
     </Head>
       <main className={cla.body}>
       
-       <Loginbtn/>
+       
        <div className={cla.phototitle}>SNS Advertising Stores</div>
        <div className={cla.album}>
        {/* <form>
