@@ -205,13 +205,13 @@
 
   .main {
     min-height: 100vh;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(85, 84, 84);
+    background-color: rgb(252, 250, 250);
   }
   .body {
     background-color: #fff;
