@@ -8,10 +8,10 @@ function Modals1() {
   
 
   return (
-    <div className='flex md:flex-col justify-center items-center mt-40'>
-        <div className='flex-gap-5'>
-        <button onClick={() => setShowModal(true)}>
-        <img src='https://bijouxhair.com/tim/landing2/caribbeanbtn.jpg' alt='btn' />
+    <div  >
+        <div>
+        <button onClick={() => setShowModal(true)} >
+        <img src='https://bijouxhair.com/tim/landing2/caribbeanbtn.jpg' alt='btn' className={cla.stylealbum}/>
          </button>
         </div>
         {showModal ? 

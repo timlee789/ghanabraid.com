@@ -80,16 +80,16 @@ export default function LandingPage({storename}) {
        </div>
        <div className={cla.textbox}>
        <ul className={cla.ula}>
-         
          <li> 5 winners are selected every Monday.</li>
        </ul>
-         
        </div>
        </center>
+       <div>
+       <Modals1/>
+       <div className={cla.videotitle}>Caribbean Summer 2022 Hair Style </div>
+       </div>
+        
       
-      <div className={cla.stylealbum}>
-        <Modals1/>
-      </div>
        <div className={cla.phototitle}>Realistic 3X Ghana Braid</div>
        <div className={cla.album}>
        
@@ -97,23 +97,23 @@ export default function LandingPage({storename}) {
        <div className={cla.videotitle}>3X Ghana Braid is Highend Braid</div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanaphoto5.jpg' alt='banner' className={cla.image}/>
        <div className={cla.videotitle}>3X Ghana Braid 100% Kanekalon </div>
-       <iframe width="100%" height="600" src="https://www.youtube.com/embed/dr8M6brJB4s?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+       <iframe width="100%" height="1000" src="https://www.youtube.com/embed/dr8M6brJB4s?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
        <div className={cla.videotitle}>3X Ghana Braid in Bahamas Cable Beach</div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanacolor.jpg' alt='banner' className={cla.image}/>
        <div className={cla.videotitle}>3X Ghana Braid over 50 different colors</div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanapackage.jpg' alt='banner' className={cla.image}/>
        <div className={cla.videotitle}>3X Ghana Braid 40 50 60 70</div>
-       <iframe width="100%" height="500" src="https://www.youtube.com/embed/mnM5Noi_W7c?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+       <iframe width="100%" height="1000" src="https://www.youtube.com/embed/mnM5Noi_W7c?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
        <div className={cla.videotitle}>3X Ghana Braid in Kingston Jamaica</div>
-       <div className={cla.stylealbum}>
+       <div >
       <a href="https://www.cosmopolitan.com/style-beauty/beauty/g36815240/ghana-braids-ideas/" target="_blank" rel="noreferrer">
-        <img src='https://bijouxhair.com/tim/landing2/cosmopolitanbtn.jpg' alt='btn' />
+        <img src='https://bijouxhair.com/tim/landing2/cosmopolitanbtn.jpg' alt='btn' className={cla.stylealbum}/>
         <div className={cla.videotitle}>From Cosmopolitan Magazin </div>
       </a>
       </div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanaphoto2.jpg' alt='banner' className={cla.image}/>
        <div className={cla.videotitle}> Try new style with 3X Ghana Braid  </div>
-       <iframe width="100%" height="400" src="https://www.youtube.com/embed/uDyX878Q8mc?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+       <iframe width="100%" height="1000" src="https://www.youtube.com/embed/uDyX878Q8mc?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
        <div className={cla.videotitle}>3X Ghana Braid in Wynwood Miami FL</div>
        <img src='https://bijouxhair.com/tim/landing2/3xghanaphoto1.jpg' alt='banner' className={cla.image}/>
       

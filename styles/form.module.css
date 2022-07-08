@@ -29,14 +29,14 @@
   padding: 0 10px;
   border-radius: 20px;
   width: 90%;
-  margin-top: 55px;
+  margin-top: 95px;
 }
 .title{
   overflow: hidden;
   background-color: yellow;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 92%; /* Full width */
+  width: 89%; /* Full width */
   font-size: 50px;
   font-weight: 600;
   height: 100px;
@@ -64,7 +64,7 @@
   }
   .stylealbum {
     margin-top: 30px;
-    width: 600px;
+    width: 100%;
   }
   .name {
       background-color: rgb(116, 114, 114);
@@ -170,7 +170,7 @@
     color: #2196F3;
   }
 .videotitle{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
@@ -179,7 +179,7 @@
 }
   .ula {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
   }
   /* Hide the browser's default checkbox */
   .container input {
