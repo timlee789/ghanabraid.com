@@ -3,6 +3,7 @@ import axios from 'axios';
 import StoreList from '../components/storeList';
 import Head from 'next/head';
 
+
 export default function Home({landingdata}) {
   
   return (
@@ -37,10 +38,23 @@ export default function Home({landingdata}) {
 }
 
 export const getServerSideProps = async() => {
+//   const client = await MongoClient.connect(
+//     `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
+//     );
+// const db = client.db();
+// const myCollection = db.collection('stores');
+// const users = await myCollection.find({}, {storename: 1}).toArray(); 
+// client.close();
   const res = await axios.get('https://ghanabraid.com/api/store');
   return {
     props: {
-      landingdata: res.data,
+      landingdata: res.data
+      // {
+      //   id: users._id,
+      //   storename: users.storename,
+      //   img1: users.img1,
+      //   img2: users.img2,
+      // },
     }
   }
 }

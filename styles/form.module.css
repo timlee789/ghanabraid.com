@@ -29,7 +29,7 @@
   padding: 0 10px;
   border-radius: 20px;
   width: 90%;
-  margin-top: 25px;
+  margin-top: 55px;
 }
 .title{
   overflow: hidden;
@@ -37,9 +37,9 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 92%; /* Full width */
-  font-size: larger;
+  font-size: 25px;
   font-weight: 600;
-  height: 40px;
+  height: 60px;
   border-radius: 20px;
 }
 .image {
@@ -64,6 +64,7 @@
   }
   .stylealbum {
     margin-top: 30px;
+    width: 98%;
   }
   .name {
       background-color: rgb(116, 114, 114);
@@ -81,7 +82,7 @@
 }
 .inputframe {
   background-color: #e9eaeb;
-  height: 380px;
+  height: 480px;
   margin: 20px 0px;
   padding-top: 30px;
   border: solid 1px;
@@ -89,11 +90,11 @@
 }
 .inputbox {
     width: 90%;
-    height: 70px;
+    height: 100px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
 }
 .btn {
@@ -178,7 +179,7 @@
 }
   .ula {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   /* Hide the browser's default checkbox */
   .container input {
