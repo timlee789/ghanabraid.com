@@ -2,7 +2,7 @@ import React, {useState } from 'react';
 import Image from 'next/image';
 import CaribbeanStyle from './caribbeanstyle';
 import cla from '../styles/form.module.css';
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 function Modals1() {
     const[showModal, setShowModal] = useState(false);
   

@@ -51,7 +51,7 @@ export default function LandingPage({storename}) {
   return (
     <div className={cla.main}>
        <Head>  
-        <meta name="viewport" content="width=1150"/>
+        {/* <meta name="viewport" content="width=1150"/> */}
         <title>3X Ghana Braid Giveaway Event</title>
         <meta name="description" content="3X Ghana Braid Giveaway Event" />
         <link rel="image_src" href="https://bijouxhair.com/tim/landing2/3xghanaphoto6.jpg" />     
@@ -59,6 +59,7 @@ export default function LandingPage({storename}) {
         <meta property="og:image" content="https://bijouxhair.com/tim/landing2/3xghanaphoto6.jpg"/>
         <meta property="og:description" content="3X Ghana Braid Giveaway Event"/>
         <meta property="og:site_name" content="Beauty Elements"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
       <main className={cla.body}>
      

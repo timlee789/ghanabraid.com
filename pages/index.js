@@ -16,7 +16,8 @@ export default function Home({landingdata}) {
   return (
     <div className={cla.main}>
        <Head>  
-        <meta name="viewport" content="width=1150"/>
+        {/* <meta name="viewport" content="width=1150"/> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>3X Ghana Braid Giveaway Event</title>
         <meta name="description" content="3X Ghana Braid Giveaway Event" />
         <link rel="image_src" href="https://bijouxhair.com/tim/landing2/3xghanaphoto6.jpg" />     
