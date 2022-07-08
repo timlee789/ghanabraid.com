@@ -37,9 +37,9 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 92%; /* Full width */
-  font-size: 25px;
+  font-size: 50px;
   font-weight: 600;
-  height: 60px;
+  height: 100px;
   border-radius: 20px;
 }
 .image {
@@ -64,7 +64,7 @@
   }
   .stylealbum {
     margin-top: 30px;
-    width: 98%;
+    width: 600px;
   }
   .name {
       background-color: rgb(116, 114, 114);
@@ -172,14 +172,14 @@
 .videotitle{
   margin-bottom: 20px;
   text-align: center;
-  font-size: large;
+  font-size: 3rem;
   font-weight: 600;
   background-color: black;
   color: white;
 }
   .ula {
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
   }
   /* Hide the browser's default checkbox */
   .container input {
