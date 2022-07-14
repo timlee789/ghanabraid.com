@@ -5,7 +5,15 @@
   flex-wrap: wrap;
   align-items: center;
 }
-
+.title {
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(6, 181, 70);
+  color: white;
+  width: 900px;
+  margin-top: 30px;
+  border-radius: 15px;
+}
 .desc {
   font-size: 24px;
   color: #444;

@@ -6,18 +6,21 @@ import Store from './store';
 function storeList({storeList}) {
   return (
     <div className={cla.container}>
-        <h1 className={cla.title}>Store</h1>
+       
+        <div>
+          <img src='https://bijouxhair.com/tim/landing2/mainbanner.jpg' alt='mainbanner' />
+        </div>
+        <div className={cla.title}>3X Ghana Braid Giveaway Event (July 15 - 25)</div>
         <div className={cla.wrapper}>
             {storeList.map((pizza) => (
-                <Store key={pizza._id} 
-                id={pizza._id}
+                <Store key={pizza.id} 
+                id={pizza.id}
                 img1={pizza.img1}
                 storename={pizza.storename}
-                desc={pizza.desc}
+                name={pizza.name}
+                
                 />
-            ))}
-          
-            
+            ))}  
         </div>
     </div>
   )

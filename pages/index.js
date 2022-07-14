@@ -36,7 +36,7 @@ export default function Home({landingdata}) {
         </form> */}
         
         
-       <StoreList storeList={landingdata} />
+       {/* <StoreList storeList={landingdata} /> */}
        <div className={cla.footer}>
         <div className={cla.footimage}>
         <a href="https://bijouxhair.com/" target='_blank' rel="noreferrer"

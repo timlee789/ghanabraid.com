@@ -10,32 +10,15 @@ export default function Home({landingdata}) {
   const [pass, setPass] = useState()
  
   const handleChange =(e) => setPass(e.target.value);
- 
+
 
   return (
     <div className={cla.main}>
-       <Head>  
-        {/* <meta name="viewport" content="width=1150"/> */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>3X Ghana Braid Giveaway Event</title>
-        <meta name="description" content="3X Ghana Braid Giveaway Event" />
-        <link rel="image_src" href="https://bijouxhair.com/tim/landing2/3xghanaphoto6.jpg" />     
-        <meta property="og:title" content="3X Ghana Braid Giveaway Event" />    
-        <meta property="og:image" content="https://bijouxhair.com/tim/landing2/3xghanaphoto6.jpg"/>
-        <meta property="og:description" content="3X Ghana Braid Giveaway Event"/>
-        <meta property="og:site_name" content="Beauty Elements"/> 
-    </Head>
+
       <main className={cla.body}>
-      
        
-       <div className={cla.phototitle}>SNS Advertising Stores USA</div>
-       <div className={cla.album}>
-       {/* <form>
-          <input type='text' onChange={handleChange} placeholder='Enter password'/>
-          <button>LOGIN</button>
-        </form> */}
-        
-        
+       <div className={cla.phototitle}>Social Media Store Marketing USA</div>
+       <div className={cla.album}>        
        <StoreList storeList={landingdata} />
        <div className={cla.footer}>
         <div className={cla.footimage}>
@@ -55,7 +38,7 @@ export const getServerSideProps = async() => {
     `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
     );
 const db = client.db();
-const myCollection = db.collection('stores');
+const myCollection = db.collection('vip_usa');
 const myData = await myCollection.find({}, {storename: 1}).toArray(); 
 client.close();
   //const res = await axios.get('https://ghanabraid.com/api/store');
@@ -64,15 +47,11 @@ client.close();
       landingdata: myData.map(Data => ({
         id: Data._id.toString() ,
         storename: Data.storename || null,
-        img1: Data.img1,
-        desc: Data.desc,
+        name: Data.name || null,
+        img1: Data.img1 || null,
+       
   }))
-      // {
-      //   id: users._id,
-      //   storename: users.storename,
-      //   img1: users.img1,
-      //   img2: users.img2,
-      // },
+      
     }
   }
 }

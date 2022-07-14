@@ -1,21 +1,28 @@
-import React from 'react';
+import React, {  useState} from 'react';
 import cla from '../styles/Home.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
+
 
 function store(props) {
-   //console.log(pizza)
+ 
   return (
+    
     <div className={cla.card}>
         <a href={`/${props.storename}`} >
          <img src={props.img1}  width="300" height='400' />
          </a>
-        <h2 className={cla.title}>{props.storename}</h2>
+        <div className={cla.title}>{props.name}</div>
+        <div className={cla.url}>https://ghanabraid.com/{props.storename}</div>
        
-        {/* <p className={cla.desc}>{props.desc}</p> */}
+        <div>
+        <a href={`/storeid/${props.id}`} >
+          <button className={cla.btn}>STORE AD STATUS</button>
+          </a>
         
-    </div>
+          </div>
+        </div>
   )
+        
+   
 }
 
 export default store

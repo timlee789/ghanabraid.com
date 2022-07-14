@@ -1,14 +1,13 @@
-import LandingPage from "../components/landingpage";
-import axios from 'axios';
-import {MongoClient} from 'mongodb'
+import {MongoClient, ObjectId} from 'mongodb'
+import Storeinfo from "../../components/storeinfo";
 
 export async function getStaticPaths(){
         const client = await MongoClient.connect(
                 `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
                 );
         const db = client.db();
-        const myCollection = db.collection('stores');
-        const users = await myCollection.find({}, {storename: 1}).toArray(); 
+        const myCollection = db.collection('vip_usa');
+        const store = await myCollection.find({}, {_id: 1}).toArray(); 
         client.close();
                 // const res = await axios.get('http://localhost:3000/api/store');
                 // const posts = await res.json();
@@ -17,46 +16,49 @@ export async function getStaticPaths(){
                 //         params: {storename: store.storename.toString()},
                 // }))
                 return {
-                 paths : users.map((store) => ({
-                        params: {storename: store.storename.toString()}})),
+                 paths : store.map((data) => ({
+                        params: {id: data._id.toString()}})),
                 fallback: false
                 }
                
 }
 
 export async function getStaticProps(context){
-         const storename = context.params.storename;
+         const storeid = context.params.id;
         const client = await MongoClient.connect(
                 `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
                 );
         const db = client.db();
         const myCollection = db.collection('vip_usa');
-        const users = await myCollection.findOne({storename: storename.toString()}); 
+        const store = await myCollection.findOne({_id: ObjectId(storeid)}); 
         //const myData = users
-        //client.close();
+        client.close();
         // const res = await axios.get('http://localhost:3000/api/store');
         // const posts = await res.json();
         
         return{
                 props:{  
-                        storename:{ 
-                                id: users._id.toString(),
-                                storename: users.storename,
-                                img1: users.img1,
+                        storeinfo:{ 
+                                id: store._id.toString(),
+                                storename: store.storename || null,
+                                name: store.name || null,
+                                phone: store.phone || null,
+                                address: store.address || null,
+                                city: store.City || null,
+                                zip: store.zip || null,
+                                state: store.state || null,
+                                img1: store.img1 || null,
+                                campaign: store.campaign || null,
                         }    
                         },
                 }
         }
 
-export default function GotoLanding({storename}){
+export default function GotoStoreinf({storeinfo}){
      
     return(
-            <div>
-                   
-                <LandingPage storename={storename} />
-                  
-                    
-                   
+            <div>     
+                <Storeinfo storeinfo={storeinfo} />        
             </div>
     )
 
