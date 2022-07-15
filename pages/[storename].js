@@ -8,7 +8,7 @@ export async function getStaticPaths(){
                 );
         const db = client.db();
         const myCollection = db.collection('stores');
-        const users = await myCollection.find({}, {storename: 1}).toArray(); 
+        const users = await myCollection.find({}, ).toArray(); 
         client.close();
                 // const res = await axios.get('http://localhost:3000/api/store');
                 // const posts = await res.json();

@@ -49,6 +49,7 @@ export async function getStaticProps(context){
                                 state: store.state || null,
                                 img1: store.img1 || null,
                                 campaign: store.campaign || null,
+                                contents: store.contents || null,
                         }    
                         },
                 }

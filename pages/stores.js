@@ -49,6 +49,7 @@ client.close();
         storename: Data.storename || null,
         name: Data.name || null,
         img1: Data.img1 || null,
+        contents: Data.contents || null,
        
   }))
       

@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import cla from '../styles/storeinfo.module.css';
 
 
 export default function StoreInfo({storeinfo}) {
- 
+  
   return (
     <div className={cla.main}>
       <main className={cla.body}>
@@ -18,13 +19,13 @@ export default function StoreInfo({storeinfo}) {
         </div>
         <div className={cla.campaignunit}>
         <div className={cla.campaigntitle}>
-          Store Name : {storeinfo.name}
+          Store Name : {storeinfo.name} {storeinfo.contents}
         </div>
         <div className={cla.campaigntitle}>
         Period : {storeinfo.campaign}
         </div>
         <div className={cla.campaigntitle}>
-        AD Contents : <img src='https:bijouxhair.com/tim/landing2/snssample.jpg' alt='r'  className={cla.contentsimage}/>
+        AD Contents : <img src={storeinfo.contents} alt='r'  className={cla.contentsimage}/>
         </div>
         <div className={cla.campaigntitle}>
         AD Result : 

@@ -18,6 +18,7 @@ function storeList({storeList}) {
                 img1={pizza.img1}
                 storename={pizza.storename}
                 name={pizza.name}
+                contents={pizza.contents}
                 
                 />
             ))}  
