@@ -9,12 +9,6 @@ export async function getStaticPaths(){
         const myCollection = db.collection('usavipstores');
         const store = await myCollection.find({}, {_id: 1}).toArray(); 
         client.close();
-                // const res = await axios.get('http://localhost:3000/api/store');
-                // const posts = await res.json();
-                // console.log(posts);
-                // const  paths = users.map((store) => ({
-                //         params: {storename: store.storename.toString()},
-                // }))
                 return {
                  paths : store.map((data) => ({
                         params: {id: data._id.toString()}})),
@@ -33,13 +27,11 @@ export async function getStaticProps(context){
         const store = await myCollection.findOne({_id: ObjectId(storeid)}); 
         //const myData = users
         client.close();
-        // const res = await axios.get('http://localhost:3000/api/store');
-        // const posts = await res.json();
-        
+
         return{
                 props:{  
                         storeinfo:{ 
-                                id: store._id.toString(),
+                                id: store._id.toString() || null,
                                 storename: store.storename || null,
                                 name: store.name || null,
                                 phone: store.phone || null,
