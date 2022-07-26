@@ -53,6 +53,25 @@
     width: 100%;
     background-color: #fff;
   }
+  .userbox {
+    display: flex;
+    max-width: 1800px;
+  }
+  .user {
+    margin: 10px;
+    border: 1px solid #2196F3;
+    padding: 5px;
+    width: 260px;
+  }
+  .user2 {
+    margin: 10px;
+    width: 600px;
+    border: 1px solid #2196F3;
+    padding: 5px;
+  }
+  .table {
+    margin-left: 300px;
+  }
   .middleimages {
     display: flex;
     flex-direction: row;

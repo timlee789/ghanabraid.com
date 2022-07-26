@@ -45,7 +45,7 @@ export const getServerSideProps = async() => {
     `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
     );
 const db = client.db();
-const myCollection = db.collection('vip_usa');
+const myCollection = db.collection('usavipstores');
 const myData = await myCollection.find({}, {storename: 1}).toArray(); 
 client.close();
   //const res = await axios.get('https://ghanabraid.com/api/store');
@@ -55,7 +55,7 @@ client.close();
         id: Data._id.toString() ,
         storename: Data.storename || null,
         img1: Data.img1,
-        contents: Data.contents,
+        
        
   }))
      

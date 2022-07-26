@@ -6,7 +6,7 @@ export async function getStaticPaths(){
                 `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
                 );
         const db = client.db();
-        const myCollection = db.collection('vip_usa');
+        const myCollection = db.collection('usavipstores');
         const store = await myCollection.find({}, {_id: 1}).toArray(); 
         client.close();
                 // const res = await axios.get('http://localhost:3000/api/store');
@@ -29,7 +29,7 @@ export async function getStaticProps(context){
                 `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
                 );
         const db = client.db();
-        const myCollection = db.collection('vip_usa');
+        const myCollection = db.collection('usavipstores');
         const store = await myCollection.findOne({_id: ObjectId(storeid)}); 
         //const myData = users
         client.close();
@@ -48,8 +48,8 @@ export async function getStaticProps(context){
                                 zip: store.zip || null,
                                 state: store.state || null,
                                 img1: store.img1 || null,
-                                campaign: store.campaign || null,
-                                contents: store.contents || null,
+                                campaign:store.campaign || null,
+                
                         }    
                         },
                 }
