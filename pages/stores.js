@@ -1,7 +1,7 @@
 import cla from '../styles/Home.module.css';
-import axios from 'axios';
+
 import StoreList from '../components/storeList';
-import Head from 'next/head';
+
 import {MongoClient} from 'mongodb';
 import { useState } from 'react';
 

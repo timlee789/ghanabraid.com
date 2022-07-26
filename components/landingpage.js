@@ -2,7 +2,7 @@ import cla from '../styles/form.module.css';
 import {useRef, useState} from 'react';
 import {useRouter} from 'next/router'
 import Head from 'next/head';
-import Modals1 from './Modals1';
+
 
 export default function LandingPage({storename}) {
   

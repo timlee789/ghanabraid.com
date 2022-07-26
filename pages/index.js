@@ -1,8 +1,5 @@
 import cla from '../styles/form.module.css';
-import axios from 'axios';
-import StoreList from '../components/storeList';
-import Head from 'next/head';
-import {MongoClient} from 'mongodb';
+
 import { useState } from 'react';
 
 
@@ -40,25 +37,3 @@ export default function Home({landingdata}) {
   )
 }
 
-export const getServerSideProps = async() => {
-  const client = await MongoClient.connect(
-    `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
-    );
-const db = client.db();
-const myCollection = db.collection('usavipstores');
-const myData = await myCollection.find({}, {storename: 1}).toArray(); 
-client.close();
-  //const res = await axios.get('https://ghanabraid.com/api/store');
-  return {
-    props: {
-      landingdata: myData.map(Data => ({
-        id: Data._id.toString() ,
-        storename: Data.storename || null,
-        img1: Data.img1,
-        
-       
-  }))
-     
-    }
-  }
-}

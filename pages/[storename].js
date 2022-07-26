@@ -1,5 +1,5 @@
 import LandingPage from "../components/landingpage";
-import axios from 'axios';
+
 import {MongoClient} from 'mongodb'
 
 export async function getStaticPaths(){
