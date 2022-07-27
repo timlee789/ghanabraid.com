@@ -2,7 +2,7 @@ import cla from '../styles/Home.module.css';
 //import db from '../data/db';
 import StoreList from '../components/storeList';
 
-//import {MongoClient} from 'mongodb';
+import {MongoClient} from 'mongodb';
 import { useState } from 'react';
 
 
@@ -34,19 +34,19 @@ export default function Home({landingdata}) {
 }
 
 export const getServerSideProps = async() => {
-//   const client = await MongoClient.connect(
-//     `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
-//     );
-// const db = client.db();
-// const myCollection = db.collection('usavipstores');
-// const myData = await myCollection.find({}, {storename: 1}).toArray(); 
-// client.close();
+  const client = await MongoClient.connect(
+    `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
+    );
+const db = client.db();
+const myCollection = db.collection('usavipstores');
+const myData = await myCollection.find({}, {storename: 1}).toArray(); 
+client.close();
   //const res = await axios.get('https://ghanabraid.com/api/store');
-  let response = await fetch("http://localhost:3000/api/post")
-  let myData = await response.json()
+  // let response = await fetch("http://localhost:3000/api/post")
+  // let myData = await response.json()
   return {
     props: {
-      landingdata: myData.message.map(Data => ({
+      landingdata: myData.map(Data => ({
         id: Data._id.toString() ,
         name: Data.name || null,
         img1: Data.img1 || null,

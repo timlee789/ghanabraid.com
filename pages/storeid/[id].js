@@ -2,10 +2,17 @@ import {MongoClient, ObjectId} from 'mongodb'
 import Storeinfo from "../../components/storeinfo";
 
 export async function getStaticPaths(){
-                let response = await fetch("http://localhost:3000/api/post");
-                let store = await response.json();
+                const client = await MongoClient.connect(
+                `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
+                );
+                const db = client.db();
+                const myCollection = db.collection('usavipstores');
+                const myData = await myCollection.find({}, {storename: 1}).toArray(); 
+                client.close();
+                // let response = await fetch("http://localhost:3000/api/post");
+                // let store = await response.json();
                 return {
-                 paths : store.message.map((data) => ({
+                 paths : myData.map((data) => ({
                         params: {id: data._id.toString()}})),
                 fallback: false
                 }
