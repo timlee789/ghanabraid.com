@@ -11,21 +11,7 @@ import { Fragment } from 'react';
 
 export default function LandingPage({storename}) {
   
-    //console.log(storename.img1)
-  //   switch (storename.img2) {
-  //     case '1': {
-  //         return ( <Modals1 />);
-  //     }
-  //     case '2': {
-  //         return ( <Modals2 />);
-  //     }
-  //     case '3': {
-  //         return updatePost(req, res);
-  //     }
-  //     case '4': {
-  //         return deletePost(req, res);
-  //     }
-  // }
+
           const camp = () => {
             switch(storename.img2) {
               case '1' :
@@ -53,16 +39,10 @@ export default function LandingPage({storename}) {
       
       <a href='https://bijouxhair.com' target='_blank' rel="noreferrer">
      <img src={storename.img1} alt='banner' className={cla.image} /></a>
-       const cate = {storename.img2}
+       
       
        <div>{camp(storename.img2)}</div>
-        {/* <Fragment>
-                 { "1" === storename.img2 ? (
-                  <Ghanabraid />
-                 ) : "2" === storename.img1 (
-                  <TapeClip />
-                 )}              
-        </Fragment> */}
+      
         
           
       </main>

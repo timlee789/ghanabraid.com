@@ -11,20 +11,20 @@ function Ghanabraid( ) {
      const refEmail = useRef();
     
      const router = useRouter()
-     const [Radio, setRadio] = useState();
+    
      
      async function submitHandler(event) {
        event.preventDefault();
        const enteredName = refName.current.value;
        const enteredTel = refTel.current.value;
        const enteredEmail = refEmail.current.value;
-       const enteredPrize = Radio;
+     
       
        const inputData ={
          name: enteredName,
          tel: enteredTel,
          email: enteredEmail,
-         prize: enteredPrize,
+       
          date: Date(),
        }
        console.log(inputData);
@@ -33,11 +33,11 @@ function Ghanabraid( ) {
         document.getElementById('name').value='';
         document.getElementById('tel').value='';
         document.getElementById('email').value='';
-        document.getElementsByName('prize').value='';
+      
      }
      async function addDataHandler(inputData) {
 
-        const response = await fetch('/api/post',
+        const response = await fetch('/api/posts',
             {
                 method: 'POST',
                 body: JSON.stringify(inputData),
