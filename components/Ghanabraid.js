@@ -109,7 +109,7 @@ function Ghanabraid( ) {
        <div className={cla.footer}>
         <div className={cla.footimage}>
         <a href="https://bijouxhair.com/" target='_blank' rel="noreferrer"
-          ><Image alt=""  src="https://bijouxhair.com/catalog/webmain/beautyelementlogo.jpg" width='250px' height='100px' /></a>
+          ><Image alt=""  src="https://bijouxhair.com/catalog/webmain/beautyelementlogo.jpg" width='180px' height='60px' /></a>
       </div>
       </div>
        </div>
