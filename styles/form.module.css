@@ -35,12 +35,12 @@
   background-color: yellow;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 800px; /* Full width */
-  font-size: 35px;
+  
+  font-size: 23px;
   font-weight: 500;
   height: 50px;
   border-radius: 20px;
-  padding-left: 50px;
+  text-align: center;
 }
 .image {
     
@@ -221,7 +221,7 @@
 
 
 
-@media only screen and (max-width:600px){  
+@media only screen and (max-width:800px){  
 
   .main {
     min-height: 100vh;
