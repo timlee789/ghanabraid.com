@@ -1,27 +1,14 @@
 import LandingPage from "../components/landingpage";
-
 import {MongoClient} from 'mongodb'
 
 export async function getStaticPaths(){
-        const client = await MongoClient.connect(
-                `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
-                );
-        const db = client.db();
-        const myCollection = db.collection('usavipstores');
-        const users = await myCollection.find({}, ).toArray(); 
-        client.close();
-                // const res = await axios.get('http://localhost:3000/api/store');
-                // const posts = await res.json();
-                // console.log(posts);
-                // const  paths = users.map((store) => ({
-                //         params: {storename: store.storename.toString()},
-                // }))
+                let response = await fetch("http://localhost:3000/api/post");
+                let users = await response.json()
                 return {
-                 paths : users.map((store) => ({
+                 paths : users.message.map((store) => ({
                         params: {storename: store.storename.toString()}})),
                 fallback: false
-                }
-               
+                } 
 }
 
 export async function getStaticProps(context){
@@ -42,7 +29,9 @@ export async function getStaticProps(context){
                         storename:{ 
                                 id: users._id.toString(),
                                 storename: users.storename,
+                                name: users.name,
                                 img1: users.img1,
+                                img2: users.img2,
                         }    
                         },
                 }
@@ -53,9 +42,7 @@ export default function GotoLanding({storename}){
     return(
             <div>
                    
-                <LandingPage storename={storename} />
-                  
-                    
+                <LandingPage storename={storename} />                      
                    
             </div>
     )
