@@ -4,7 +4,7 @@ function layout({children}) {
   return (
     <div>
     <Head> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>3X Ghana Braid Giveaway Event</title>
         <meta name="description" content="3X Ghana Braid Giveaway Event" />

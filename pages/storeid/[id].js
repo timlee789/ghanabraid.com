@@ -15,8 +15,7 @@ export async function getStaticPaths(){
                  paths : myData.map((data) => ({
                         params: {id: data._id.toString()}})),
                 fallback: false
-                }
-               
+                }            
 }
 
 export async function getStaticProps(context){

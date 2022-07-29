@@ -39,7 +39,7 @@ export const getServerSideProps = async() => {
     );
 const db = client.db();
 const myCollection = db.collection('usavipstores');
-const myData = await myCollection.find({}, {storename: 1}).toArray(); 
+const myData = await myCollection.find({}).sort({state: 1}).toArray(); 
 client.close();
   //const res = await axios.get('https://ghanabraid.com/api/store');
   // let response = await fetch("http://localhost:3000/api/post")

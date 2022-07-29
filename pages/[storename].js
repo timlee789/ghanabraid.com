@@ -7,17 +7,16 @@ export async function getStaticPaths(){
                 );
                 const db = client.db();
                 const myCollection = db.collection('usavipstores');
-                const myData = await myCollection.find({}, {storename: 1}).toArray(); 
+                const myData = await myCollection.find({}).toArray(); 
                 client.close();
                 // let response = await fetch("http://localhost:3000/api/post");
                 // let users = await response.json()
                 return {
-                 paths : myData.map((store) => ({
-                        params: {storename: store.storename.toString()}})),
+                 paths : myData.map((data) => ({
+                        params: {storename: data.storename.toString()}})),
                 fallback: false
                 } 
 }
-
 export async function getStaticProps(context){
          const storename = context.params.storename;
         const client = await MongoClient.connect(
