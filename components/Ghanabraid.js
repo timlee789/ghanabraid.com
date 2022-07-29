@@ -69,11 +69,7 @@ function Ghanabraid( ) {
        </ul>
        </div>
        </center>
-       {/* <div>
-       <Modals1/>
-       <div className={cla.videotitle}>Caribbean Braid Hair Style - Click here </div>
-       </div> */}
-        
+
       
        <div className={cla.phototitle}>Realistic 3X Ghana Braid</div>
        <div className={cla.album}>
@@ -115,6 +111,13 @@ function Ghanabraid( ) {
        <div className={cla.album}>
        <div className={cla.box} > 
        <iframe width="385" height="235" src="https://www.youtube.com/embed/mnM5Noi_W7c?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+       <iframe width="100%" height="300" src="https://www.youtube.com/embed/uDyX878Q8mc?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+       <div className={cla.videotitle}>3X Ghana Braid in Wynwood Miami FL</div>
+       <iframe width="100%" height="300" src="https://www.youtube.com/embed/dr8M6brJB4s?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+       <div className={cla.videotitle}>3X Ghana Braid in Bahamas</div>   
+       <iframe width="100%" height="300" src="https://www.youtube.com/embed/mnM5Noi_W7c?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
        <div className={cla.videotitle}>3X Ghana Braid in Kingston Jamaica</div>
        </div>
      </div>
