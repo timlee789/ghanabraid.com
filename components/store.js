@@ -1,6 +1,6 @@
 import React, {  useState} from 'react';
 import cla from '../styles/Home.module.css';
-
+import Image from 'next/image'
 
 function store(props) {
  
@@ -8,7 +8,7 @@ function store(props) {
     
     <div className={cla.card}>
         <a href={`/${props.storename}`} >
-         <img src={props.img1}  width="300" height='400' />
+         <Image src={props.img1}  width="300" height='250' />
          </a>
         <div className={cla.title}>{props.name}</div>
         <div className={cla.url}>https://ghanabraid.com/{props.storename}</div>

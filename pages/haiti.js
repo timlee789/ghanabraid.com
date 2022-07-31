@@ -1,5 +1,5 @@
 
-import cla from '../styles/form2.module.css';
+import cla from '../styles/form.module.css';
 import {useRef, useState} from 'react';
 import {useRouter} from 'next/router'
 import Image from 'next/image';
