@@ -41,7 +41,7 @@ export default function Home() {
      }
      async function addDataHandler(inputData) {
 
-      const response = await fetch('/api/posts',
+      const response = await fetch('/api/postshaiti',
           {
               method: 'POST',
               body: JSON.stringify(inputData),

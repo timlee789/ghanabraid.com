@@ -40,7 +40,7 @@ export default function Home({landingdata}) {
      }
      async function addDataHandler(inputData) {
 
-      const response = await fetch('/api/post',
+      const response = await fetch('/api/postsbundle',
           {
               method: 'POST',
               body: JSON.stringify(inputData),

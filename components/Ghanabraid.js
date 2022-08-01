@@ -37,7 +37,7 @@ function Ghanabraid( ) {
      }
      async function addDataHandler(inputData) {
 
-        const response = await fetch('/api/posts',
+        const response = await fetch('/api/postsghana',
             {
                 method: 'POST',
                 body: JSON.stringify(inputData),

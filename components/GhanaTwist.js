@@ -41,7 +41,7 @@ export default function Home() {
      }
      async function addDataHandler(inputData) {
 
-      const response = await fetch('/api/texasevent',
+      const response = await fetch('/api/poststwist',
           {
               method: 'POST',
               body: JSON.stringify(inputData),
