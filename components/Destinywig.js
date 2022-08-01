@@ -114,9 +114,9 @@ function Destinywig({landingdata}) {
        <div className={cla.textbox}>
        <div className={cla.ula2}>To get the free giveaway wig: </div>
        <ul className={cla.ula}>
-         <li>1. Fill out the registration above.</li>
-         <li>2. Select the wig you want bellow.</li>
-         <li>3. 5 winners are selected every Monday.</li>
+         <li> Fill out the registration above.</li>
+         <li> Select the wig you want bellow.</li>
+         <li> 5 winners are selected every Monday.</li>
        </ul>
          
        </div>

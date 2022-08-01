@@ -1,6 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 .main {
   min-height: 100vh;
   padding:0 0;
@@ -42,7 +42,9 @@
 .imagebtnbox {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  gap: 15px;
+  margin-left: 10px;
+  
 }
 .image {
     
@@ -58,9 +60,10 @@
 }
 .ula {
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-left: 30px;
   margin-bottom: 20px;
+  font-family: Roboto;
 }
 .ula2 {
   text-align: center;
@@ -72,19 +75,20 @@
   
 }
 .album {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 800px;   
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
+  margin-right: auto;*/
+  margin-top: 15px; 
   border: solid 1px #2196F3;
   border-radius: 15px;
   background-color: rgb(218, 231, 251);
 }
 .fieldset {
-  max-width: 600px;
+  max-width: 800px;
+  margin-top: 20px;
 }
 .name {
   background-color: rgb(116, 114, 114);
@@ -288,7 +292,8 @@
         margin: 10px;
     }
   .fieldset {
-      max-width: 90%;
+      max-width: 100%;
+      margin-top: 20px;
   }
   .ula {
    text-align: left;

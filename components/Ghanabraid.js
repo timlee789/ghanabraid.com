@@ -64,8 +64,8 @@ function Ghanabraid( ) {
        <div className={cla.textbox}>
        <div className={cla.ula2}>To get the free giveaway Hair: </div>
        <ul className={cla.ula}>
-         <li> - 5 winners will be selected every Monday.</li>
-         <li> - 5 Packs 3x Ghana braid 50 for each Winner.</li>
+         <li>  5 winners will be selected every Monday.</li>
+         <li>  5 Packs 3x Ghana braid 50 for each Winner.</li>
        </ul>
        </div>
        </center>
@@ -96,31 +96,25 @@ function Ghanabraid( ) {
        <div className={cla.videotitle}>3X Ghana Braid 100% Kanekalon </div>
        </div>
      </div>
-       <div className={cla.album}>
-       <div className={cla.box} >
-       <iframe width="385" height="235" src="https://www.youtube.com/embed/uDyX878Q8mc?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-       <div className={cla.videotitle}>3X Ghana Braid in Wynwood Miami FL</div>
-       </div>
-     </div>
-       <div className={cla.album}>
-       <div className={cla.box} >
-       <iframe width="385" height="235" src="https://www.youtube.com/embed/dr8M6brJB4s?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-       <div className={cla.videotitle}>3X Ghana Braid in Bahamas</div>
-       </div>
-     </div>
+       
        <div className={cla.album}>
        <div className={cla.box} > 
-       <iframe width="385" height="235" src="https://www.youtube.com/embed/mnM5Noi_W7c?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-
        <iframe width="100%" height="300" src="https://www.youtube.com/embed/uDyX878Q8mc?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
        <div className={cla.videotitle}>3X Ghana Braid in Wynwood Miami FL</div>
+       </div>
+       </div>
+       <div className={cla.album}>
+       <div className={cla.box} > 
        <iframe width="100%" height="300" src="https://www.youtube.com/embed/dr8M6brJB4s?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
        <div className={cla.videotitle}>3X Ghana Braid in Bahamas</div>   
+       </div>
+       </div>
+       <div className={cla.album}>
+       <div className={cla.box} > 
        <iframe width="100%" height="300" src="https://www.youtube.com/embed/mnM5Noi_W7c?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-
        <div className={cla.videotitle}>3X Ghana Braid in Kingston Jamaica</div>
        </div>
-     </div>
+       </div>
      <div className={cla.album}>
        <div className={cla.box} > 
        <Image src='https://bijouxhair.com/tim/landing2/3xghanaphoto2.jpg' alt='banner' width='800px' height='960px' className={cla.image}/>

@@ -91,13 +91,13 @@ function Ghanabraid( ) {
    </div>       
     <div className={cla.album}>
     <div className={cla.box} >
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/OkO3SsWTPe4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+           <iframe width="100%" height="300" src="https://www.youtube.com/embed/OkO3SsWTPe4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
            <div className={cla.videotitle}>Hair Clip Tutorial</div> 
    </div>
    </div>        
     <div className={cla.album}>
     <div className={cla.box} >
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/HB5ZlJnlX2M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> 
+           <iframe width="100%" height="300" src="https://www.youtube.com/embed/HB5ZlJnlX2M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> 
            <div className={cla.videotitle}>Hair Clip Pesentation</div> 
    </div>
    </div>       
@@ -109,13 +109,13 @@ function Ghanabraid( ) {
    </div>       
     <div className={cla.album}>
     <div className={cla.box} >
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/G-ogPL1J-TI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+             <iframe width="100%" height="300" src="https://www.youtube.com/embed/G-ogPL1J-TI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
              <div className={cla.videotitle}>Soprano Tape Hair Tutorial</div>
    </div>
    </div>  
    <div className={cla.album}>
     <div className={cla.box} >
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5FZ5i9JMIDA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    <iframe width="100%" height="300" src="https://www.youtube.com/embed/5FZ5i9JMIDA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
     <div className={cla.videotitle}>Soprano Tape Hair Tutorial</div>
     </div>
    </div>       
@@ -139,7 +139,7 @@ function Ghanabraid( ) {
    </div>          
     <div className={cla.album}>
     <div className={cla.box} >
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/HqH91Jn7UW0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+             <iframe width="100%" height="300" src="https://www.youtube.com/embed/HqH91Jn7UW0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
              <div className={cla.videotitle}>U-Tip Hair Presetation</div>
    </div>
    </div>       
