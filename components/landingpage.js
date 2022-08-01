@@ -19,13 +19,13 @@ export default function LandingPage({storename}) {
               case '1' :
                 return ( <Ghanabraid />)
               case '2' :
-                return ( <GhanaTwist />)
+                return ( <TapeClip />)
               case '3' :
                 return ( <Destinywig />)
               case '4' :
                 return ( <Bundlehair />)
               case '5' :
-                return ( <TapeClip />)
+                return ( <GhanaTwist />)
             }
             }
             const handleClick1 = (event) => {
