@@ -110,7 +110,7 @@ export default function Home({landingdata}) {
          <li>Fill out the registration above.</li>
          <li>Select the Brazilian Hair you want bellow.</li>
          <li>Follow @Bijouxhairusa</li>
-         <li>5 winners are selected every 2 weeks.</li>
+         <li>3 winners are selected every 2 weeks.</li>
        </ul>
          
        </div>

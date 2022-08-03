@@ -64,7 +64,7 @@ function Ghanabraid( ) {
        <div className={cla.textbox}>
        <div className={cla.ula2}>To get the free giveaway Hair: </div>
        <ul className={cla.ula}>
-         <li>  5 winners will be selected every Monday.</li>
+         <li>  5 winners will be selected every 2 weeks.</li>
          <li>  5 Packs 3x Ghana braid 50 for each Winner.</li>
        </ul>
        </div>

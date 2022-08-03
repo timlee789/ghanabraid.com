@@ -116,7 +116,7 @@ function Destinywig({landingdata}) {
        <ul className={cla.ula}>
          <li> Fill out the registration above.</li>
          <li> Select the wig you want bellow.</li>
-         <li> 5 winners are selected every Monday.</li>
+         <li> 5 winners are selected every 2 weeks.</li>
        </ul>
          
        </div>
