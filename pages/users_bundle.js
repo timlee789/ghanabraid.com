@@ -9,8 +9,8 @@ function users({userdata}) {
        
         <main>
         <center>
-       <h2 className={cla.phototitle}>3X Ghana Braid Giveaway Event</h2>
-        <Image src='https://bijouxhair.com/tim/landing2/mainbanner.jpg' alt='fslf' width='1600' height="550"/>
+       <h2 className={cla.phototitle}>Soprano Trio Bundle Hair Giveaway Event</h2>
+       <Image src='https://bijouxhair.com/tim/ad/trioheadbanner.jpg' width='800px' height='420px' alt='banner' />
         <div  className={cla.table}>
         {/* <CSVLink data={userdata} >DOWNLOAD LIST</CSVLink> */}
         {userdata.map( data => (
@@ -46,8 +46,8 @@ export const getServerSideProps = async() => {
     `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@clustertim.koved.mongodb.net/Landing?retryWrites=true&w=majority`
     );
 const db = client.db();
-const myCollection = db.collection('usauserjuly');
-const myData = await myCollection.find({}, {storename: 1}).toArray(); 
+const myCollection = db.collection('event_bundle');
+const myData = await myCollection.find({}).sort({_id: -1}).toArray(); 
 client.close();
   //const res = await axios.get('https://ghanabraid.com/api/store');
   return {
@@ -57,7 +57,7 @@ client.close();
         name: Data.name || null,
         tel: Data.tel || null,
         email: Data.email || null,
-        date: Data.date
+        date: Data.date || null
        
   }))
      

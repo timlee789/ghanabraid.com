@@ -201,6 +201,27 @@
  
   margin-left: 100px;
 }
+.table {
+  margin-left: 250px;
+
+ 
+}
+.userbox {
+  display: flex;
+  flex-direction: row;
+
+}
+.user {
+  width: 350px;
+  padding: 10px 50px;
+  text-align: left;
+  
+}
+.user2 {
+  width: 800px;
+  padding: 10px 90px;
+  text-align: left;
+}
 /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
     background-color: #ccc;
