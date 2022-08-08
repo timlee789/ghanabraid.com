@@ -10,7 +10,7 @@ function Thanks() {
       <img src='https://bijouxhair.com/tim/landing2/3xghanaphoto6.jpg' alt='banner'/>
         <div className={cla.thanks}>
         Thanks for participating.<br/>
-        We annouce the winners every Monday 3pm by Instagram and contact the winners by email.
+        We annouce the winners every 2 weeks by Instagram and contact the winners by email.
        <br/> And send giveaway by UPS as soon as we get the winners address.
        </div>
        </center>
