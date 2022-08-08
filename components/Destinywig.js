@@ -13,6 +13,7 @@ function Destinywig({landingdata}) {
    
     const router = useRouter()
     const [Radio, setRadio] = useState();
+
     async function submitHandler(event) {
       event.preventDefault();
       const enteredName = refName.current.value;
@@ -67,7 +68,7 @@ function Destinywig({landingdata}) {
         
       <Image src='https://bijouxhair.com/tim/landing2/destinywighead.jpg' alt='banner' width='800px' height='500px' />
       <div className={cla.ula2}>Fill out the Registration and Win !</div>
-       <form >
+       <form onSubmit={submitHandler}>
         <input type='text' id='name' ref={refName} placeholder='Name' required  className={cla.inputbox} /><br/>  
          <input type='text' id='tel' ref={refTel} placeholder='Tel' required className={cla.inputbox}/><br/>
          <input type='text' id='email' ref={refEmail} placeholder='Email'  required className={cla.inputbox} />
