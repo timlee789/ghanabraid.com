@@ -32,7 +32,7 @@ export async function getStaticProps(context){
         return{
                 props:{  
                         storeinfo:{ 
-                                id: store._id.toString() || null,
+                                id: store._id.toString(),
                                 storename: store.storename || null,
                                 name: store.name || null,
                                 phone: store.phone || null,
