@@ -20,16 +20,19 @@ export default function StoreInfo({storeinfo}) {
 
         
                { storeinfo.campaign.map((cam, index) => (
-               <div key={cam.reach}>
+               <div key={cam.reach} className={cla.campaigninfobox}>
+                <div>
                     <div className={cla.campaignresult}> Event Name : <span className={cla.data2}>{cam.campaignname}</span></div>
                     <div className={cla.campaignresult}> Event Period : <span className={cla.data}>{cam.period}</span> </div>
                     <div className={cla.campaignresult}>Number of AD Reach Person :<span className={cla.data}> {cam.reach}</span></div>
                     <div className={cla.campaignresult}> Number of Landing Page Visitors:<span className={cla.data}> {cam.visit}</span></div>
                     <div className={cla.campaignresult}> Event Participants : <span className={cla.data}> {cam.participation}</span></div>
-                    <div className={cla.campaignresult}> Instagram / Facebook AD Content : </div>
-                    <div> 
-                      <Image src={cam.content} alt={cam.campaignname} width='300px' height='300px'/>
-                    </div>
+                </div>
+                <div> 
+                   
+                    
+                      <Image src={cam.content} alt={cam.campaignname} width='200px' height='200px'/>
+                </div>
 
                </div>
       

@@ -77,7 +77,7 @@
       color: blue
   }
   .data2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
       font-weight: 500;
       text-align: left;
       color: rgb(136, 101, 4)
@@ -94,7 +94,15 @@
    
     margin-left: 40px;
 }
+.campaigninfobox {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #ccc;
+ border-radius: 20px;
+ padding: 10px;
+  margin: 30px;
 
+}
 
 @media only screen and (max-width:600px){  
 
