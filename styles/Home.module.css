@@ -16,6 +16,7 @@
   text-align: center;
   background-color: #d5840b;
   color: white;
+  margin-bottom: 15px;
 }
 .footer {
   display: flex;
@@ -99,6 +100,17 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+.categorybox {
+  text-align: center;
+}
+.menu {
+  margin-left: 40px;
+  padding: 5px 20px;
+  background-color:#d5840b;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {

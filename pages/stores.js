@@ -4,6 +4,8 @@ import StoreList from '../components/storeList';
 
 import {MongoClient} from 'mongodb';
 import { useState } from 'react';
+import Link from 'next/link';
+
 
 
 export default function Home({landingdata}) {
@@ -18,6 +20,13 @@ export default function Home({landingdata}) {
       <main className={cla.body}>
        
        <div className={cla.phototitle}>Social Media Store Marketing USA</div>
+       <div className={cla.categorybox}>
+        <Link href='https://ghanabraid.com/users_ghanabraid' target="_blank"><a className={cla.menu}> Ghana Braid Event </a></Link>   
+        <Link href='https://ghanabraid.com/users_wig' ><a className={cla.menu}> Destiny Wig Event </a></Link>   
+        <Link href='https://ghanabraid.com/users_twist' ><a className={cla.menu}> Ghana Twist Event </a></Link>   
+        <Link href='https://ghanabraid.com/users_bundle' ><a className={cla.menu}> Brazilian Trio Event</a></Link>   
+        <Link href='https://ghanabraid.com/users_cliphair' ><a className={cla.menu}> Soprano Magic Clip Event </a></Link>   
+       </div>
        <div className={cla.album}>        
        <StoreList storeList={landingdata} />
        <div className={cla.footer}>
