@@ -18,6 +18,7 @@ function users({userdata}) {
               <div className={cla.user}> {data.name} </div>
               <div className={cla.user}>{data.tel}</div>
                <div className={cla.user}>{data.email}</div>
+               <div className={cla.user}>{data.prize}</div>
                <div className={cla.user2}>{data.date}</div>
                </div>
             ))}
@@ -57,7 +58,9 @@ client.close();
         name: Data.name || null,
         tel: Data.tel || null,
         email: Data.email || null,
-        date: Data.date || null
+        prize: Data.prize || null,
+        date: Data.date || null,
+        
        
   }))
      
