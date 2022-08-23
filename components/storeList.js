@@ -10,7 +10,7 @@ function storeList({storeList}) {
         <div>
           <img src='https://bijouxhair.com/tim/landing2/mainbanner.jpg' alt='mainbanner' />
         </div>
-        <div className={cla.title}>Beauty Elements Giveaway Event (Aug 6 - 21)</div>
+        <div className={cla.title}>Beauty Elements Giveaway Event </div>
         <div className={cla.wrapper}>
             {storeList.map((pizza) => (
                 <Store key={pizza.id} 
