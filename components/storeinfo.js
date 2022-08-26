@@ -26,7 +26,7 @@ export default function StoreInfo({storeinfo}) {
                     <div className={cla.campaignresult}> Event Period : <span className={cla.data}>{cam.period}</span> </div>
                     <div className={cla.campaignresult}>Number of AD Reach Person :<span className={cla.data}> {cam.reach}</span></div>
                     <div className={cla.campaignresult}> Number of Landing Page Visitors:<span className={cla.data}> {cam.visit}</span></div>
-                    <div className={cla.campaignresult}> Event Participants : <span className={cla.data}> {cam.participation}</span></div>
+                    {/* <div className={cla.campaignresult}> Event Participants : <span className={cla.data}> {cam.participation}</span></div> */}
                 </div>
                 <div> 
                    
