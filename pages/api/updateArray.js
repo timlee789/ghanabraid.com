@@ -10,7 +10,7 @@ import { ObjectId } from 'mongodb';
                         process.env.MONGODB_URI
                     );
                     const db = client.db();
-                    const { _id, campaignname, period, reach, visit, participation, content } = req.body;
+                    const { _id, campaignname, period, reach, visit, content } = req.body;
                 // update the published status of the post
                 await db.collection('usavipstores').updateMany(
                     {
@@ -22,7 +22,6 @@ import { ObjectId } from 'mongodb';
                                                     "period": period, 
                                                     "reach": reach,
                                                     "visit": visit,
-                                                    "participation" : participation,
                                                     "content": content
                                                 }},                                
                     }

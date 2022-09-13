@@ -33,7 +33,7 @@ function CampaignInfo({campaign2}) {
                 content: addFormData.content,
         };
       
-       // const newStores = [...storeData, newStore];
+       //const newStores = [...storeData, newStore];
         //setStoreData(newStore)
         const response = await fetch('/api/updateArray', 
         {
