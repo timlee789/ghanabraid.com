@@ -52,7 +52,7 @@ function Ghanabraid( ) {
     <div>  
       <center>  
       <Image src='https://bijouxhair.com/tim/landing2/cliphairhead.jpg' alt='banner' width='800px' height='500px' /> 
-      <div className={cla.ula2}>Fill out the Registration and Win !</div>
+      {/* <div className={cla.ula2}>Fill out the Registration and Win !</div>
       <div className={cla.inputframe}>
       <form onSubmit={submitHandler}>
          <input type='text' id='name' ref={refName} placeholder='Name' className={cla.inputbox} required /><br/>
@@ -61,15 +61,15 @@ function Ghanabraid( ) {
          <button className={cla.btn}>Submit</button>
        </form>
        </div>
-       </center>
+       
        <div className={cla.textbox}>
        <div className={cla.ula2}>To get the free giveaway Hair: </div>
        <ul className={cla.ula}>
          <li> - 3 winners will be selected every 2 weeks.</li>
          <li> - 1 Packs Clip Hair for each Winner.</li>
        </ul>
-       </div>
-      
+       </div> */}
+      </center>
        <div className={cla.phototitle}>Soprano Hair Extesions</div>
     <div className={cla.album}>
     <div className={cla.box} >

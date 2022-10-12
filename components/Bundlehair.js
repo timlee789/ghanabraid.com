@@ -1,4 +1,3 @@
-
 import cla from '../styles/form.module.css';
 import {useRef, useState} from 'react';
 import {useRouter} from 'next/router'
@@ -58,7 +57,7 @@ export default function Home({landingdata}) {
       <div >
         <center>
       <Image src='https://bijouxhair.com/tim/ad/trioheadbanner.jpg' width='800px' height='420px' alt='banner' />
-      <div className={cla.ula2}>Fill out the Registration and Win !</div>
+      {/* <div className={cla.ula2}>Fill out the Registration and Win !</div>
       
        <form onSubmit={submitHandler}>
         <div className={cla.inputframe}>
@@ -102,9 +101,9 @@ export default function Home({landingdata}) {
       </fieldset>
         </div>
          <button className={cla.btn}>Submit</button>
-       </form>
+       </form> */}
       
-       <div className={cla.textbox}>
+       {/* <div className={cla.textbox}>
        <h3>To get the free giveaway Bundle Hair: </h3>
        <ul className={cla.ula}>
          <li>Fill out the registration above.</li>
@@ -113,7 +112,7 @@ export default function Home({landingdata}) {
          <li>3 winners are selected every 2 weeks.</li>
        </ul>
          
-       </div>
+       </div> */}
        </center>
        <div className={cla.phototitle}>Giveaway Brazilian Trio Hair</div>
        <div className={cla.album}>
