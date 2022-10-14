@@ -18,12 +18,12 @@ export default function LandingPage({storename}) {
             switch(menu) {
               case '1' :
                 return ( <Ghanabraid />)
-              // case '2' :
-              //   return ( <TapeClip />)
+              case '2' :
+                return ( <TapeClip />)
               case '3' :
                 return ( <Destinywig />)
-              // case '4' :
-              //   return ( <Bundlehair />)
+              case '4' :
+                return ( <Bundlehair />)
               case '5' :
                 return ( <GhanaTwist />)
             }
@@ -31,15 +31,15 @@ export default function LandingPage({storename}) {
             const handleClick1 = (event) => {
               setMenu("1");
             }
-            // const handleClick2 = (event) => {
-            //   setMenu("2");
-            // }
+            const handleClick2 = (event) => {
+              setMenu("2");
+            }
             const handleClick3 = (event) => {
               setMenu("3");
             }
-            // const handleClick4 = (event) => {
-            //   setMenu("4");
-            // }
+            const handleClick4 = (event) => {
+              setMenu("4");
+            }
             const handleClick5 = (event) => {
               setMenu("5");
             }
@@ -78,12 +78,12 @@ export default function LandingPage({storename}) {
          <div className={cla.btnimage} ><button type='button' onClick={handleClick3}>
           <Image src="https://bijouxhair.com/tim/landing2/btndestiny2.jpg" alt='ddsl'  width={160} height={120} objectFit='cover'/>
           </button></div>
-          {/* <div className={cla.btnimage} ><button type='button' onClick={handleClick4}>
+          <div className={cla.btnimage} ><button type='button' onClick={handleClick4}>
           <Image src="https://bijouxhair.com/tim/landing2/btntrio2.jpg" alt='ddsl'  width={160} height={120} objectFit='cover'/>
           </button></div>
           <div className={cla.btnimage} ><button type='button' onClick={handleClick2}>
           <Image src="https://bijouxhair.com/tim/landing2/btncliphair2.jpg" alt='ddsl'  width={160} height={120} objectFit='cover'/>
-          </button></div> */}
+          </button></div>
          
          
           </div>
