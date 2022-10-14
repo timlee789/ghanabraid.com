@@ -75,15 +75,15 @@ export default function LandingPage({storename}) {
           <div className={cla.btnimage} ><button type='button' onClick={handleClick5}>
           <Image src="https://bijouxhair.com/tim/landing2/btnghanatwist2.jpg" alt='ddsl'  width={160} height={120} objectFit='cover' />
           </button></div>
-         
-         <div className={cla.btnimage} ><button type='button' onClick={handleClick3}>
-          <Image src="https://bijouxhair.com/tim/landing2/btndestiny2.jpg" alt='ddsl'  width={160} height={120} objectFit='cover'/>
-          </button></div>
+      
           </div>
           
 
   
           <div className={cla.imagebtnbox}>
+          <div className={cla.btnimage} ><button type='button' onClick={handleClick3}>
+          <Image src="https://bijouxhair.com/tim/landing2/btndestiny2.jpg" alt='ddsl'  width={160} height={120} objectFit='cover'/>
+          </button></div>
           <div className={cla.btnimage} ><button type='button' onClick={handleClick4}>
           <Image src="https://bijouxhair.com/tim/landing2/btntrio2.jpg" alt='ddsl'  width={160} height={120} objectFit='cover'/>
           </button></div>
